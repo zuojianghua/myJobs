@@ -1,0 +1,53 @@
+<div class="panel_title_wrap" ng-include="'html/component/ComponentTitle.html'"></div>
+
+<!--搜索区域-->
+<div class="panel_cont">
+    <ul class="search_terms">
+        <li>
+            <label class="name">关键词</label>
+            <input type="text" class="form-control" placeholder="代码或名称" ng-model="data.search_data.keyword" />
+        </li>
+        <li>
+            <label class="name">简单选择</label>
+            <select-simple input-value="data.search_data.crm_series_code" input-select="select_vip_series"></select-simple>
+        </li>
+    </ul>
+    <div class="btn_wrap"><button class="button emphasize" ng-click="form_search();">搜索</button><button class="button" ng-click="form_clear();">清空</button></div>
+</div>
+<!--列表区域-->
+<div class="result_wrap">
+    <table class="result_table">
+        <thead>
+            <tr>
+                <th>代码</th>
+                <th>名称</th>
+                <th>标题1</th>
+                <th>标题2</th>
+                <th>标题3</th>
+                <th>标题4</th>
+                <th>标题5</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="td in data.list_data track by $index">
+                <td>{{td.level_code}}</td>
+                <td>{{td.level_name}}</td>
+                <td>{{td.crm_series_code}}</td>
+                <td>{{td.sql_order}}</td>
+                <td>{{td.rebate}}</td>
+                <td>{{td.expiry_year}}</td>
+                <td>{{td.expiry_month}}</td>
+                <td>{{td.status|checkmark}}</td>
+                <td>
+                    <button ng-click="goto('/crm/vip_level/show/'+td.vip_level_id);">查看</button>
+                    <button ng-show="td.status==0" ng-click="list_del(td.vip_level_id);">删除</button>
+                    <button ng-show="td.status==0" ng-click="list_start(td.vip_level_id);">启用</button>
+                    <button ng-show="td.status==1" ng-click="list_stop(td.vip_level_id);">停用</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>   
+    <pager page-data="data.page_data"  page-func="form_search"></pager>
+</div>

@@ -1,0 +1,19 @@
+<style>
+    .md_warp{ margin: 0 15px;}
+    .md_warp h1{ font-weight: bold; font-size: 1.5em; width: 99%; margin: 20px 0 10px 0;}
+    .md_warp h2{ font-weight: bold; font-size: 1.1em; width: 99%; margin: 10px 0;}
+    .md_warp p{text-indent: 1em; line-height: 1.5em; margin-top: 5px;}
+    .md_warp code{background-color:teal; color:#eee; font-family:Courier New, Courier, monospace; padding: 2px 5px;}
+    .md_warp pre code{ width: 90%; display: block; margin-left: 1em; border-radius: 4px;}
+    .md_warp ul,.md_warp ol{ list-style:inside; margin-left: 1em;}
+    .md_warp li{ line-height: 1.5em;}
+</style>
+<div class="panel_title_wrap" ng-include="'html/component/ComponentTitle.html'"></div>
+<div class="panel_cont" style="padding-top:0;">
+    <!--<div class="md_warp" btf-markdown ng-include="data.mdfile"></div>-->
+    <div class="md_warp" marked src="data.mdfile"></div>
+    <!--<div class="btn_wrap">
+        <button class="button emphasize">上一篇</button>
+        <button class="button emphasize">下一篇</button>
+    </div>-->
+</div>

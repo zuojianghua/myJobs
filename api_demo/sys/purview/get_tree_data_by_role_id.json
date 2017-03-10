@@ -1,0 +1,30 @@
+{"status": 1,"message": "\u83b7\u53d6\u6210\u529f","data": [
+    { "purview_id": "1","parent_id": "0","name": "菜单1","url": "","type": "1","sql_order": "3","sql_show": "1","status": "1", "child": [ 
+        {"purview_id": "101","parent_id": "1","name": "组1","url": "","type": "1","sql_order": "3","sql_show": "1","status": "1","child": [ 
+            {"purview_id": "10101","parent_id": "101","name": "项1","url": "\/jobs\/index","type": "1","sql_order": "3","sql_show": "1","status": "1"},
+            {"purview_id": "10102","parent_id": "101","name": "项2","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1"}, 
+            {"purview_id": "10103","parent_id": "101","name": "项3","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1"}, 
+            {"purview_id": "10104","parent_id": "101","name": "项4","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1"} 
+        ]}, 
+        { "purview_id": "102", "parent_id": "1", "name": "组2", "url": "", "type": "1", "sql_order": "3", "sql_show": "1", "status": "1", "child": [
+            {"purview_id": "10201","parent_id": "102","name": "项5","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" }, 
+            {"purview_id": "10201","parent_id": "102","name": "项6","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" }
+        ]}
+    ]},
+    { "purview_id": "2","parent_id": "0","name": "菜单2","url": "","type": "1","sql_order": "3","sql_show": "1","status": "1", "child": [ 
+        {"purview_id": "201","parent_id": "2","name": "组3","url": "","type": "1","sql_order": "3","sql_show": "1","status": "1","child": [ 
+            {"purview_id": "20101","parent_id": "201","name": "项1","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1"},
+            {"purview_id": "20102","parent_id": "201","name": "项2","url": "\/menu\/group\/actiond","type": "1","sql_order": "3","sql_show": "1","status": "1"}
+            
+        ]}, 
+        { "purview_id": "202", "parent_id": "2", "name": "组4", "url": "", "type": "1", "sql_order": "3", "sql_show": "1", "status": "1", "child": [
+            {"purview_id": "20201","parent_id": "202","name": "项3","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" }, 
+            {"purview_id": "20202","parent_id": "202","name": "项4","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" }
+        ]},
+        { "purview_id": "203", "parent_id": "2", "name": "组5", "url": "", "type": "1", "sql_order": "3", "sql_show": "1", "status": "1", "child": [
+            {"purview_id": "20301","parent_id": "203","name": "项5","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" }, 
+            {"purview_id": "20302","parent_id": "203","name": "项6","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" },
+            {"purview_id": "20303","parent_id": "203","name": "项7","url": "\/menu\/group\/action","type": "1","sql_order": "3","sql_show": "1","status": "1" }
+        ]}
+    ]}
+]}
